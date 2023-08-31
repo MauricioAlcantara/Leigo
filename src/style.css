@@ -1,0 +1,63 @@
+body {
+    font-family: 'ADLaM Display', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a2e;
+    color: #FFFFFF;
+}
+
+#gameContainer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);  /* Fundo semi-transparente preto */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#gameTitle {
+    font-size: 48px;
+}
+
+#inputContainer {
+    /* display: flex;  Remova ou comente esta linha */
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;  /* Adicione isso se você quiser manter o display: flex; */
+}
+
+.inputRow {
+    margin-bottom: 10px;
+}
+
+.singleCharInput {
+    font-family: 'ADLaM Display', cursive;
+    width: 60px;
+    height: 60px;
+    font-size: 48px;
+    text-align: center;
+    margin: 1px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+#result {
+    font-size: 18px;
+}
+
+#attempts {
+    font-size: 18px;
+}
+
+.singleCharInput:disabled {
+    background-color: #6e6e6e;
+}
+
+.singleCharInput:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #32CD32;  /* Usando LimeGreen como cor */
+    caret-color: transparent;
+}
